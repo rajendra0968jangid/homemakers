@@ -109,7 +109,7 @@ const getCurrentUser = asyncHandler(async (req, res) => {
 })
 
 const sendMail = asyncHandler(async (req, res) => {
-    const receivingEmailAddress = 'rajendra1234jangid@gmail.com'; // Replace with your receiving email address
+    const receivingEmailAddress = ''; // Replace with your receiving email address
 
     const { name, email, subject, message } = req.body;
 
@@ -119,8 +119,8 @@ const sendMail = asyncHandler(async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail', // You can use other services like SendGrid, Mailgun, etc.
         auth: {
-            user: 'kumawatritik54@gmail.com', // Replace with your email
-            pass: 'nwco avbe krim sipm'   // Replace with your email password
+            user: '', // Replace with your email
+            pass: ''   // Replace with your email password
         }
     });
 
